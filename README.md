@@ -37,6 +37,11 @@ This project utilizes the **Regensburg Pediatric Appendicitis Dataset**, which w
 
 The study was approved by the Ethics Committee of the University of Regensburg (no. 18-1063-101, 18-1063\_1-101, and 18-1063\_2-101) and was performed following applicable guidelines and regulations. ([Zenodo][1])
 
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7669442.svg)](https://doi.org/10.5281/zenodo.7669442)
+
+
+
 ---
 
 ## ⚙️ Installation
@@ -68,7 +73,7 @@ The GIF below shows **grayscale ultrasound images** with the model’s predictio
 
 ![Ultrasound Predictions](ultrasound_predictions.gif)
 
-> **Tip:** Save your GIF in a folder called `gifs/` in your repository for neat organization.
+
 
 ---
 
