@@ -59,25 +59,6 @@ pip install -r requirements.txt
 
 ---
 
-## 📁 Folder Structure
-
-```
-ultrasound-resnet50/
-│
-├─ gifs/
-│   └─ ultrasound_predictions.gif
-├─ dataset/
-│   ├─ train/
-│   ├─ val/
-│   └─ ...
-├─ src/
-├─ README.md
-├─ requirements.txt
-└─ ...
-```
-
----
-
 ## 🖼️ Project Showcase
 
 The GIF below shows **grayscale ultrasound images** with the model’s predictions:
@@ -85,7 +66,7 @@ The GIF below shows **grayscale ultrasound images** with the model’s predictio
 * **Label** = ground truth
 * **Pred** = predicted probability
 
-![Ultrasound Predictions](gifs/ultrasound_predictions.gif)
+![Ultrasound Predictions](ultrasound_predictions.gif)
 
 > **Tip:** Save your GIF in a folder called `gifs/` in your repository for neat organization.
 
