@@ -73,16 +73,6 @@ The GIF below shows **grayscale ultrasound images** with the model’s predictio
 
 ![Ultrasound Predictions](ultrasound_predictions.gif)
 
-
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file.
-
----
-
 If you need further assistance or adjustments, feel free to ask!
 
 [1]: https://zenodo.org/records/7669442?utm_source=chatgpt.com "Regensburg Pediatric Appendicitis Dataset - Zenodo"
