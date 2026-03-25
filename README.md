@@ -1,12 +1,12 @@
-Pediatric Appendicitis Classification via B-Mode Ultrasonography
+# Pediatric Appendicitis Classification via B-Mode Ultrasonography
 A PyTorch-based Convolutional Neural Network (ResNet50) engineered for binary classification of pediatric appendicitis from raw, 2D abdominal ultrasound frames.
 
-📚 Project Overview
+## 📚 Project Overview
 Diagnosing pediatric appendicitis from ultrasonography is highly dependent on measuring the physical diameter and compressibility of the organ. Standard computer vision pipelines frequently fail in this domain due to image distortion and UI artifacts.
 
 This project implements a custom transfer-learning pipeline utilizing a pretrained ResNet50 architecture. The training loop and data transformation pipelines were explicitly engineered to preserve physical tissue scale and prevent artificial feature memorization, achieving an AUC of 0.836 on a small, highly specialized clinical dataset.
 
-⚙️ Key Architectural Solutions
+## ⚙️ Key Architectural Solutions
 1. Spatial Integrity & Aspect-Ratio Preservation
 A critical failure point in medical imaging models is the blind squashing of images to fit network input requirements (e.g., standard Resize((224, 224))). Squashing rectangular ultrasounds distorts the aspect ratio, rendering an inflamed 8mm appendix mathematically identical in size to a healthy 4mm appendix.
 
@@ -22,7 +22,7 @@ Validation loss alone is insufficient to prove clinical reasoning. The pipeline 
 
 Result: Visual telemetry confirms the model accurately isolates the "target sign" (the cross-sectional structure of the appendix/bowel) and normal fascial planes, rather than relying on random background noise or image borders.
 
-📊 Performance Metrics
+## 📊 Performance Metrics
 Model: ResNet50 (Pretrained, Custom Classification Head)
 
 Loss Function: BCEWithLogitsLoss
@@ -33,12 +33,12 @@ Peak AUC: 0.836
 
 Threshold Optimization: The decision boundary was mathematically recalibrated using Youden's J Statistic to optimize the False Negative / False Positive trade-off, resulting in an optimal probability threshold of 0.504.
 
-🧠 Dataset
+## 🧠 Dataset
 This project utilizes the Regensburg Pediatric Appendicitis Dataset, acquired in a retrospective study from a cohort of pediatric patients admitted with abdominal pain to Children’s Hospital St. Hedwig in Regensburg, Germany.
 
 The study was approved by the Ethics Committee of the University of Regensburg (no. 18-1063-101, 18-1063_1-101, and 18-1063_2-101) and was performed following applicable guidelines and regulations. (Zenodo)
 
-💻 Installation & Usage
+## 💻 Installation & Usage
 Clone the repository and install dependencies:
 
 Bash
