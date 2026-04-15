@@ -5,6 +5,7 @@ A PyTorch-based Convolutional Neural Network (ResNet50) engineered for binary cl
 Diagnosing pediatric appendicitis from ultrasonography is highly dependent on measuring the physical diameter and compressibility of the organ. Standard computer vision pipelines frequently fail in this domain due to image distortion and UI artifacts.
 
 This project implements a custom transfer-learning pipeline utilizing a pretrained ResNet50 architecture. The training loop and data transformation pipelines were explicitly engineered to preserve physical tissue scale and prevent artificial feature memorization, achieving an AUC of 0.836 on a small, highly specialized clinical dataset.
+<img width="975" height="402" alt="image" src="https://github.com/user-attachments/assets/2a7a0323-bbd3-4bfe-8665-4c2cec217a24" />
 
 ## ⚙️ Key Architectural Solutions
 1. Spatial Integrity & Aspect-Ratio Preservation
